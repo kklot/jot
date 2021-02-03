@@ -312,6 +312,8 @@ Error message and password prompt
 
 <li>Mật độ dân số châu Phi</li>
 
+<li>Vim zoom window keep layout</li>
+
 <li>Vòng xoay chờ đợi</li>
 
 </ul>
@@ -10672,14 +10674,14 @@ Error message and password prompt
 <div created="20210201230159694" modified="20210201233951596" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div created="20210201221623150" modified="20210201235745344" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20210201221623150" modified="20210203024950599" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20210201225207869" modified="20210201230547051" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/Gitea</pre>
+<div created="20210201225207869" modified="20210203025114818" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20210201231611961" modified="20210201235501933" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Open</pre>
+<div created="20210201231611961" modified="20210203025122131" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div created="20210201234047301" modified="20210201235741866" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
@@ -10693,7 +10695,7 @@ Error message and password prompt
 <div created="20210201233736237" creator="f" modified="20210201233739640" modifier="f" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div list="[[COVID vắc xin]] [[Mật độ dân số châu Phi]] [[Vòng xoay chờ đợi]]" title="$:/StoryList">
+<div created="20210203024947743" list="[[Vim zoom window keep layout]] [[COVID vắc xin]] [[Mật độ dân số châu Phi]] [[Vòng xoay chờ đợi]]" modified="20210203024947743" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210201230302945" modified="20210201230302945" title="$:/theme">
@@ -10819,6 +10821,20 @@ Error message and password prompt
 </div>
 <div created="20210202000045218" modified="20210202000301534" tags="idea demography spatial africa" title="Mật độ dân số châu Phi">
 <pre>[img[img/africa.jpeg]]</pre>
+</div>
+<div created="20210203025004767" modified="20210203025030304" tags="" title="Vim zoom window keep layout">
+<pre>To avoid managing the layout, we can simply open the current file in a new tab and  keep the cursor where it currently is, then close the tab afterward. Put this in `.vimrc`, so when we press `\z` vim will open current file in a new tab (in full width and height)
+
+```
+function! OpenInTab()
+	let curpos = getpos('.')
+	tabedit %
+	call cursor(curpos[1], curpos[2])
+endfunction
+nnoremap &lt;Leader&gt;z :call OpenInTab()&lt;Enter&gt;
+```
+
+I map to `&lt;LocalLeader&gt;z`, which is `&lt;Space&gt;z`, such handy, very convinient!</pre>
 </div>
 <div created="20210201231616640" modified="20210201231826462" tags="IT bash R programming" title="Vòng xoay chờ đợi">
 <pre>```
