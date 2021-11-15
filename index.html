@@ -440,6 +440,8 @@ Error message and password prompt
 
 <li>R</li>
 
+<li>Remove files with irregular name</li>
+
 <li>Tiddlywiki - should commenting system be sought</li>
 
 <li>Truyện về loài thịt biết nghĩ suy</li>
@@ -536,8 +538,8 @@ Error message and password prompt
 <div created="20210201234103020" modified="20210201235539136" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
 <pre>hide</pre>
 </div>
-<div created="20210203221059310" creator="vekano" modified="20210203221059310" modifier="vekano" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
-<pre>hide</pre>
+<div created="20210203221059310" creator="vekano" modified="20211115161411398" modifier="vekano" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
+<pre>show</pre>
 </div>
 <div created="20210201234128576" modified="20210203190150039" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/refresh">
 <pre>show</pre>
@@ -11062,8 +11064,8 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20210201233856435" modified="20210201233856435" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20210201230213363" creator="vekano" modified="20210211090301730" modifier="vekano" title="$:/state/tab--1963855381">
-<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
+<div created="20210201230213363" creator="vekano" modified="20211115161348517" modifier="vekano" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Toolbars</pre>
 </div>
 <div created="20210201230150041" creator="vekano" modified="20210203212821633" modifier="vekano" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
@@ -11077,8 +11079,8 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20210203212143346" creator="vekano" modified="20210203221610471" modifier="vekano" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Languages</pre>
 </div>
-<div created="20210201221623150" creator="vekano" modified="20210211090311397" modifier="vekano" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Settings</pre>
+<div created="20210201221623150" creator="vekano" modified="20211115161337703" modifier="vekano" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20210201225207869" creator="vekano" modified="20210204110604433" modifier="vekano" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -11086,8 +11088,8 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20210203212136824" creator="vekano" modified="20210207163045883" modifier="vekano" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20210201231611961" creator="vekano" modified="20210211090132011" modifier="vekano" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20210201231611961" creator="vekano" modified="20211115161328969" modifier="vekano" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20210201234047301" creator="vekano" modified="20210211090251693" modifier="vekano" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
@@ -11152,7 +11154,7 @@ very-muted-foreground: rgba(240, 196, 117, 0.7)</pre>
 <div created="20210201233736237" creator="f" modified="20210203212705372" modifier="vekan" title="$:/status/UserName">
 <pre>vekano</pre>
 </div>
-<div list="[[Truyện về loài thịt biết nghĩ suy]] [[Put a door at the top, and rotate 90 degree]] [[Prospect theory is just a piecewise linear regression]] [[GAM - zeros more than one knot]] [[Vancouver special]] [[Log to file C++ for debuging]] [[MacOS zsh git autocomplete]] [[Vòng xoay chờ đợi]] [[Vim zoom window keep layout]] [[Bye bye Sublime Text, a Vimmer now]] Quadform [[GAM - sum to zero constraints]]" title="$:/StoryList">
+<div created="20211115161330936" creator="vekano" list="[[Remove files with irregular name]] [[Truyện về loài thịt biết nghĩ suy]] [[Put a door at the top, and rotate 90 degree]] [[Prospect theory is just a piecewise linear regression]] [[GAM - zeros more than one knot]] [[Vancouver special]] [[Log to file C++ for debuging]] [[MacOS zsh git autocomplete]] [[Vòng xoay chờ đợi]] [[Vim zoom window keep layout]] [[Bye bye Sublime Text, a Vimmer now]] Quadform [[GAM - sum to zero constraints]]" modified="20211115161330936" modifier="vekano" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20210201230302945" creator="vekano" modified="20210203220255589" modifier="vekano" title="$:/theme">
@@ -11383,6 +11385,18 @@ Is something seriously wrong about this statement?</pre>
 </div>
 <div created="20210203103638641" modified="20210203103650092" title="R">
 <pre>{{{[tag[R]]}}}</pre>
+</div>
+<div created="20211115161424179" creator="vekano" modified="20211115162210956" modifier="vekano" tags="IT ubuntu terminal" title="Remove files with irregular name">
+<pre>Some programs, command generate weird file names such as this one 
+`''$'\001''0A@h'$'\261''@8'$'\r''@'$'\036\035\006\004''@@@...` 
+which can not be selected, even with `find . -name '\'\'*`
+To delete, select it by `inode` number:
+
+```
+ls -li 
+# get the first number corresponding to the file
+find . -maxdepth 1 -inum ### -exec rm -i {} \;
+```</pre>
 </div>
 <div created="20210203220723260" creator="vekano" modified="20210203220901883" modifier="vekano" tags="tiddlywiki disqus" title="Tiddlywiki - should commenting system be sought">
 <pre>It would make things `twitter`/`facebook` kind of site.
